@@ -1,18 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Collections;
 using DevExpress.XtraTreeList.StyleFormatConditions;
-using DevExpress.Utils;
-using DevExpress.XtraGrid;
-using DevExpress.Utils.Serializing;
+using System.Collections;
 
-namespace WindowsApplication1
-{
+namespace E1984 {
     public class SerializableFormatCollection : CollectionBase
     {
         public SerializableFormatCollection(StyleFormatConditionCollection collection)

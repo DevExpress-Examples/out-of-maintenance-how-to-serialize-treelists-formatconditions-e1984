@@ -1,19 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using System.Collections;
-using DevExpress.XtraTreeList.StyleFormatConditions;
 using DevExpress.Utils;
-using DevExpress.XtraGrid;
 using DevExpress.Utils.Serializing;
+using DevExpress.XtraGrid;
+using DevExpress.XtraTreeList.StyleFormatConditions;
 
-namespace WindowsApplication1
-{
+namespace E1984 {
     public class SerializableFormatCondition
     {
 
@@ -33,51 +23,44 @@ namespace WindowsApplication1
 
 
         [XtraSerializableProperty(XtraSerializationVisibility.Content)]
-        public AppearanceObject Appearance
-        {
-            get { return _appearance; }
-            set { _appearance.Assign(value); }
+        public AppearanceObject Appearance {
+            get => _appearance;
+            set => _appearance.Assign(value);
         }
 
         [XtraSerializableProperty()]
-        public string ColumnName
-        {
-            get { return _columnName; }
-            set { _columnName = value; }
+        public string ColumnName {
+            get => _columnName;
+            set => _columnName = value;
         }
 
         [XtraSerializableProperty()]
-        public FormatConditionEnum Condition
-        {
-            get { return _condition; }
-            set { _condition = value; }
+        public FormatConditionEnum Condition {
+            get => _condition;
+            set => _condition = value;
         }
 
         [XtraSerializableProperty()]
-        public bool ApplyToRow
-        {
-            get { return _applyToRow; }
-            set { _applyToRow = value; }
+        public bool ApplyToRow {
+            get => _applyToRow;
+            set => _applyToRow = value;
         }
 
         [XtraSerializableProperty()]
-        public object Value1
-        {
-            get { return _value1; }
-            set { _value1 = value; }
+        public object Value1 {
+            get => _value1;
+            set => _value1 = value;
         }
 
         [XtraSerializableProperty()]
-        public object Value2
-        {
-            get { return _value2; }
-            set { _value2 = value; }
+        public object Value2 {
+            get => _value2;
+            set => _value2 = value;
         }
         [XtraSerializableProperty()]
-        public object Expression
-        {
-            get { return _expression; }
-            set { _expression = value; }
+        public object Expression {
+            get => _expression;
+            set => _expression = value;
         }
         public void CopyFromStyleFormat(StyleFormatCondition style)
         {

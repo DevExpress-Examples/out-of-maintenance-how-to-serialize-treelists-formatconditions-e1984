@@ -1,4 +1,4 @@
-namespace WindowsApplication1
+namespace E1984
 {
     partial class Form1
     {
@@ -28,8 +28,10 @@ namespace WindowsApplication1
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraTreeList.StyleFormatConditions.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraTreeList.StyleFormatConditions.StyleFormatCondition();
-            DevExpress.XtraTreeList.StyleFormatConditions.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraTreeList.StyleFormatConditions.StyleFormatCondition();
+            DevExpress.XtraTreeList.StyleFormatConditions.TreeListFormatRule treeListFormatRule1 = new DevExpress.XtraTreeList.StyleFormatConditions.TreeListFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraTreeList.StyleFormatConditions.TreeListFormatRule treeListFormatRule2 = new DevExpress.XtraTreeList.StyleFormatConditions.TreeListFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue2 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             this.treeListColumn2 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             this.treeList1 = new DevExpress.XtraTreeList.TreeList();
             this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
@@ -51,24 +53,28 @@ namespace WindowsApplication1
             this.treeListColumn1,
             this.treeListColumn2});
             this.treeList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            styleFormatCondition1.Appearance.Options.UseBackColor = true;
-            styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.ApplyToRow = true;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.NotEqual;
-            styleFormatCondition1.Value1 = "-z";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Lime;
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Yellow;
-            styleFormatCondition2.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.ApplyToRow = true;
-            styleFormatCondition2.Column = this.treeListColumn2;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal;
-            styleFormatCondition2.Value1 = -12;
-            this.treeList1.FormatConditions.AddRange(new DevExpress.XtraTreeList.StyleFormatConditions.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2});
+            treeListFormatRule1.ApplyToRow = true;
+            treeListFormatRule1.Column = treeListColumn2;
+            treeListFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue1.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleValue1.Condition = DevExpress.XtraEditors.FormatCondition.NotEqual;
+            formatConditionRuleValue1.Value1 = -12;
+            treeListFormatRule1.Rule = formatConditionRuleValue1;
+            treeListFormatRule2.ApplyToRow = true;
+            treeListFormatRule2.Column = this.treeListColumn2;
+            treeListFormatRule2.Name = "Format1";
+            formatConditionRuleValue2.Appearance.BackColor = System.Drawing.Color.Lime;
+            formatConditionRuleValue2.Appearance.BackColor2 = System.Drawing.Color.Yellow;
+            formatConditionRuleValue2.Appearance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            formatConditionRuleValue2.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue2.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue2.Value1 = -12;
+            treeListFormatRule2.Rule = formatConditionRuleValue2;
+            this.treeList1.FormatRules.Add(treeListFormatRule1);
+            this.treeList1.FormatRules.Add(treeListFormatRule2);
             this.treeList1.Location = new System.Drawing.Point(0, 0);
             this.treeList1.Name = "treeList1";
             this.treeList1.Size = new System.Drawing.Size(572, 482);

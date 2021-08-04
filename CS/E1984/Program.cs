@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace WindowsApplication1
-{
+namespace E1984 {
     static class Program
     {
         /// <summary>

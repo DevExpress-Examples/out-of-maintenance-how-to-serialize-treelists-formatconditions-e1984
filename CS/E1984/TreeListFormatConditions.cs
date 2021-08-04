@@ -1,18 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Collections;
-using DevExpress.XtraTreeList.StyleFormatConditions;
-using DevExpress.Utils;
-using DevExpress.XtraGrid;
 using DevExpress.Utils.Serializing;
+using DevExpress.XtraTreeList.StyleFormatConditions;
 
-namespace WindowsApplication1
-{
+namespace E1984 {
     public class TreeListFormatConditions
     {
 
@@ -29,10 +18,7 @@ namespace WindowsApplication1
         }
 
         [XtraSerializableProperty(XtraSerializationVisibility.Collection, true, false, true, 0, XtraSerializationFlags.None)]
-        public SerializableFormatCollection Conditions
-        {
-            get { return _conditions; }
-        }
+        public SerializableFormatCollection Conditions => _conditions;
 
         private object XtraCreateConditionsItem(XtraItemEventArgs e)
         {

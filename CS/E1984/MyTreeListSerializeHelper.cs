@@ -1,16 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using DevExpress.Utils.Serializing;
 using DevExpress.XtraTreeList;
 using System.IO;
 
-namespace WindowsApplication1
-{
+namespace E1984 {
     public static class MyTreeListSerializeHelper
     {
         public static string DefaultFileName = "test.xml";
